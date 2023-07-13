@@ -1,3 +1,3 @@
 # PythonScraps
 
-Little scraps of code written in applying python as I learn it.
+Little scraps of code that don't have any other home
