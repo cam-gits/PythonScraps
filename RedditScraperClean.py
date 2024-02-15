@@ -20,7 +20,7 @@ def scrape_reddit(subreddit_name, num_posts=10):
     new_posts = subreddit.new(limit=num_posts)
 
     for post in new_posts:
-        with open('reddit.csv', 'a', newline='') as csvfile:
+        with open('reddit.csv', 'a', newline='',encoding="utf-8") as csvfile: #encode for web
             created = datetime.utcfromtimestamp(post.created)
             fieldnames = ['Title', 'Date','URL','Text','Score','Number of Comments']
             postdump = csv.writer(csvfile, delimiter=',')
